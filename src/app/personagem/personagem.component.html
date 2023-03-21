@@ -1,6 +1,10 @@
 <div>
   Personagem: {{nome}}
-  <div>
-    Templo Jedi: Coruscant
-  </div>
+
+  <div *ngIf= "ehBruxo; else naoBruxo">
+     Varinha:{{nome_var}}
+    </div>
+    <ng-template #naoBruxo>
+      <p>Não é bruxo</p>
+    </ng-template>
 </div>

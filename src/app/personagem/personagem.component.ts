@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-personagem',
@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./personagem.component.css']
 })
 export class PersonagemComponent {
-  nome: String = "Luke Skywalker";
+  tipoBruxo= true;
+  constructor(){
 
+  }
+  @Input() nome: String ="";
+  @Input() nome_var: String="";
+  @Input() ehBruxo: Boolean= true;
 }
